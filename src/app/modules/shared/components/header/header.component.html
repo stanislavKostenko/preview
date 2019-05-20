@@ -1,0 +1,9 @@
+<div class="header" *ngIf="carousel">
+  <mat-card class="header__card">
+    <ul class="header__card__list">
+      <li class="header__card__list__item" *ngFor="let item of headerNavbar; let i = index" (click)="carousel.slickGoTo(i)">
+        <span>{{item.name}}</span>
+      </li>
+    </ul>
+  </mat-card>
+</div>

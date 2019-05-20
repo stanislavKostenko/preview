@@ -1,0 +1,24 @@
+.landing {
+  overflow: hidden;
+  .slick-slide {
+    border: none;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slide {
+    position: relative;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      border-radius: 20px;
+      font-size: 40px;
+      border: 10px solid #ffffff;
+      padding: 40px;
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  &__card {
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+
+    &__list {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      &__item {
+        height: 100%;
+        padding: 15px;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        transition: background-color 250ms, color 250ms;
+
+        &:last-child {
+          margin-left: auto;
+          justify-self: flex-end;
+        }
+
+        &:hover {
+          background-color: #ffffff;
+          color: #23beff;
+        }
+      }
+    }
+  }
+}
